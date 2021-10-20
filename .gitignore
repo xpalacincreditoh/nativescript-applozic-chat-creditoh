@@ -4,6 +4,7 @@ logs
 scratch/
 .idea/
 .settings/
+.npmrc
 
 npm-debug.log
 node_modules
