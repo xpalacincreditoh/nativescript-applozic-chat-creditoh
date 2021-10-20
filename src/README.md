@@ -1,69 +1,29 @@
-# Applozic NativeScript Chat Plugin
+# Applozic NativeScript Chat Plugin 
 
-## Prerequisites
-
-### iOS
-* Apps must target iOS 10 or later
-* Xcode 12 or later required
-
-### NativeScript
-* NativeScript 7 required check more on compatibility issues [here](https://nativescript.org/blog/nativescript-6-7-xcode-compatibility/)
+Fork of nativescript-applozic-chat@1.7.2
 
 ## Installation
 
-> For NativeScript 7 compatibility, run.
-
-
-```bash
-tns plugin add nativescript-applozic-chat@2.0.0
+```javascript
+tns plugin add nativescript-applozic-chat-creditoh
 ```
-
-> For NativeScript 6 compatibility, run.
-
-```bash
-tns plugin add nativescript-applozic-chat@1.7.2
-```
-
-Goto src folder and run
+Goto src folder and run 
 ```
 npm run demo.ios
 ```
 
-## Usage
-
-
-##### JavaScript
-
-Add import 
-```js
-var nativescript_applozic_chat = require("nativescript-applozic-chat");
-```
-
-And then inside your funcation you can create the object of ApplozicChat to access it.
-```js
-var applozicChat = new nativescript_applozic_chat.ApplozicChat();
-```
-
-##### TypeScript
-
-Add import 
-```js
-import { ApplozicChat } from "nativescript-applozic-chat";
-```
-And then inside your funcation you can create the object of ApplozicChat to access it.
-```js
-var applozicChat = new ApplozicChat();
-```
+## Usage 
 
 #### Login/Register User
 ```js
     var alUser = {
-            'userId' : userId,   //Replace it with the userId of the logged in user NOTE: String userId
-            'password' : password,  //Put password here NOTE: String password
+            'userId' : userId,   //Replace it with the userId of the logged in user
+            'password' : password,  //Put password here
             'authenticationTypeId' : 1,
-            'applicationId' : 'applozic-sample-app'  //replace "applozic-sample-app" with Application Key from Applozic Dashboard
+            'applicationId' : 'applozic-sample-app',  //replace "applozic-sample-app" with Application Key from Applozic Dashboard
+            'deviceApnsType' : 0    //Set 0 for Development and 1 for Distribution (Release)
         };
-
+	
     applozicChat.login(alUser, function(response) {
         applozicChat.launchChat(); //launch chat
       }, function(error) {
@@ -87,7 +47,7 @@ var applozicChat = new ApplozicChat();
         applozicChat.launchChatWithUserId(userId);
 ```
 
-##### Launch Chat with specific Group
+##### Launch Chat with specific Group 
 
 ```
         applozicChat.launchChatWithGroupId(groupId, function(response){
@@ -109,7 +69,7 @@ applozicChat.logout(function(response) {
 ```
 ## Push Notification Setup instruction
 
-### Uploading the push notification certificate  and GCM/FCM  server key in applozic dashboard
+### Uploading the push notification certificate  and GCM/FCM  server key in applozic dashboard 
 
 a) For IOS upload your APNS push notification certificate to Applozic Dashboard page under 'Edit Application' section in order to enable real-time notification.
 
@@ -159,20 +119,22 @@ Steps to follow:
           console.log("push failed : " + response);
         });
        ```
-
+       
   Note : Everytime you remove and add android platform you need to follow steps 1,2,4 and 5.
-
-
+  
+  
 ## Ios
-
-
+  
+ 
  1) Download delegate.ts file from this **[delegate.ts link](https://drive.google.com/open?id=1sdPA0xye7GLB0mGDs2hIhXUYU3nLsvDd)** and paste it under ```your project folder-->app-->delegate.ts```
 
- 2) Download app.ts file from the **[app.ts link](https://drive.google.com/open?id=1Q04oQgoO212i76Bv_91vWGAMsT3qng1N)** and replace the **app.ts** file in your project if you have any changes then you can merge only required changes from the **app.ts** file link
-
-
-
-
-
-
+ 2) Download app.ts file from the **[app.ts link](https://drive.google.com/open?id=1Q04oQgoO212i76Bv_91vWGAMsT3qng1N)** and replace the **app.ts** file in your project if you have any changes then you can merge only required changes from the **app.ts** file link 
+ 
+  
+  
+  
+  
+  
 **NOTE** : Above push notification setup for android and ios is in the case if your not using native script push plugin in your project
+  
+  
