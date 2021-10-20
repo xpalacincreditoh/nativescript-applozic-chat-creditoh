@@ -5,6 +5,7 @@ scratch/
 .idea/
 .settings/
 .npmrc
+src/.npmrc
 
 npm-debug.log
 node_modules
