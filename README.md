@@ -1,5 +1,6 @@
-# Applozic NativeScript Chat Plugin
+# Applozic NativeScript Chat Plugin 
 
+Fork of nativescript-applozic-chat@1.7.2
 
 ## Installation
 
