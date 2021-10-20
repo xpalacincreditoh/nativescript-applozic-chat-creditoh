@@ -4,7 +4,7 @@
 ## Installation
 
 ```javascript
-tns plugin add nativescript-applozic-chat
+tns plugin add nativescript-applozic-chat-creditoh
 ```
 Goto src folder and run 
 ```

@@ -1,0 +1,9 @@
+.DS_Store
+
+logs
+scratch/
+.idea/
+.settings/
+
+npm-debug.log
+node_modules

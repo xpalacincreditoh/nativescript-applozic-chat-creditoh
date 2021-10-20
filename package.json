@@ -1,22 +1,25 @@
 {
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "_args": [
     [
-      "nativescript-applozic-chat@1.7.2",
-      "/home/xavier/PhpstormProjects/crmhex-app"
+      "nativescript-applozic-chat-creditoh@1.7.2",
+      "/home/xavier/nativescript-applozic-chat-creditoh"
     ]
   ],
-  "_from": "nativescript-applozic-chat@1.7.2",
-  "_id": "nativescript-applozic-chat@1.7.2",
+  "_from": "nativescript-applozic-chat-creditoh@1.7.2",
+  "_id": "nativescript-applozic-chat-creditoh@1.7.2",
   "_inBundle": false,
   "_integrity": "sha512-NTlzUFFBCimlVi8spNuKuwu5mPYD3cZZqEqwRthuBrX4gqtGcokTm8ZXCpHRmfp8GAbFHik94A7R4iq6mEVZAg==",
-  "_location": "/nativescript-applozic-chat",
+  "_location": "/nativescript-applozic-chat-creditoh",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "nativescript-applozic-chat@1.7.2",
-    "name": "nativescript-applozic-chat",
-    "escapedName": "nativescript-applozic-chat",
+    "raw": "nativescript-applozic-chat-creditoh@1.7.2",
+    "name": "nativescript-applozic-chat-creditoh",
+    "escapedName": "nativescript-applozic-chat-creditoh",
     "rawSpec": "1.7.2",
     "saveSpec": null,
     "fetchSpec": "1.7.2"
@@ -24,16 +27,20 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/nativescript-applozic-chat/-/nativescript-applozic-chat-1.7.2.tgz",
+  "_resolved": "https://registry.npmjs.org/nativescript-applozic-chat-creditoh/-/nativescript-applozic-chat-creditoh-1.7.2.tgz",
   "_spec": "1.7.2",
-  "_where": "/home/xavier/PhpstormProjects/crmhex-app",
+  "_where": "/home/xavier/PhpstormProjects/nativescript-applozic-chat-creditoh",
   "author": {
     "name": "Your Name",
     "email": "youremail@yourdomain.com"
   },
   "bootstrapper": "nativescript-plugin-seed",
   "bugs": {
-    "url": "https://github.com/devashishmamgain/nativescript-applozic-chat/issues"
+    "url": "https://github.com/xpalacincreditoh/nativescript-applozic-chat-creditoh/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpalacincreditoh/nativescript-applozic-chat-creditoh.git"
   },
   "dependencies": {},
   "description": "Nativescript plugin from Applozic that wraps the Native chat UI for android and iOS",
@@ -49,7 +56,7 @@
     "tslint": "5.20.1",
     "typescript": "^3.9.6"
   },
-  "homepage": "https://github.com/devashishmamgain/nativescript-applozic-chat",
+  "homepage": "https://github.com/xpalacincreditoh/nativescript-applozic-chat-creditoh",
   "keywords": [
     "NativeScript",
     "JavaScript",
@@ -65,7 +72,7 @@
     ]
   },
   "main": "applozic-chat",
-  "name": "nativescript-applozic-chat",
+  "name": "nativescript-applozic-chat-creditoh",
   "nativescript": {
     "platforms": {
       "android": "6.5.0",
@@ -80,8 +87,8 @@
     "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
     "demo.ios": "npm i && npm run tsc && cd ../demo && tns run ios --syncAllFiles",
     "demo.reset": "cd ../demo && rimraf platforms",
-    "plugin.link": "npm link && cd ../demo && npm link nativescript-applozic-chat && cd ../src",
-    "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-applozic-chat && tns plugin add ../src",
+    "plugin.link": "npm link && cd ../demo && npm link nativescript-applozic-chat-creditoh && cd ../src",
+    "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-applozic-chat-creditoh && tns plugin add ../src",
     "plugin.tscwatch": "npm run tsc -- -w",
     "postclone": "npm i && node scripts/postclone.js && cd ../demo && npm i && cd ../src && npm run plugin.link",
     "precommit": "lint-staged",
